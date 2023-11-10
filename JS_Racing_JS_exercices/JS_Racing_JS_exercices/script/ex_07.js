@@ -30,6 +30,12 @@ window.onload=()=>{
         audio.pause() 
     }
     pause.addEventListener("click", pauseMusic);
+
+    let stop = document.getElementsByTagName("footer")[0].getElementsByTagName("div")[1].getElementsByTagName("button")[1];
+    function stopMusic() {
+        audio.stop() 
+    }
+    stop.addEventListener("click", stopMusic);
     
     let mute = document.getElementsByTagName("footer")[0].getElementsByTagName("div")[1].getElementsByTagName("button")[2];
     function muteMusic() {
